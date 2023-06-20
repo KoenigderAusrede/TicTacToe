@@ -1,0 +1,77 @@
+body {
+    background-image: url("img/backgroundbody.jpeg");
+    background-size: cover;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+table td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid black;
+    padding: 0;
+}
+
+table tr:first-child td {
+    border-top: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table td:first-child {
+    border-left: none;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.handler {
+    display: inline-block;
+    width: 80px !important;
+    height: 80px !important;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.animate-circle {
+    animation: circle-animation 1s forwards;
+  }
+
+  @keyframes circle-animation {
+    from {
+      stroke-dasharray: 0 220;
+    }
+    to {
+      stroke-dasharray: 220 0;
+    }
+  }
